@@ -16,7 +16,7 @@ namespace QL_TuyenSinh
         {
             InitializeComponent();
         }
-        KetNoi kn = new KetNoi();
+        Connection kn = new Connection();
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,14 +24,14 @@ namespace QL_TuyenSinh
         private void HoSoTuyenSinh()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from HoSoTuyenSinh");
+            dta = kn.Lay_Dulieu("Select * from HoSoTuyenSinh");
             DataGrid_HSTS.DataSource = dta;
             HIENTHIDULIEU();
         }
         private void MaVung()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from DoiTuongUuTien");
+            dta = kn.Lay_Dulieu("Select * from DoiTuongUuTien");
             DataGrid_HSTS.DataSource = dta;
             cbbmv.DataSource = dta;
             cbbmv.DisplayMember = "mavung";
@@ -40,7 +40,7 @@ namespace QL_TuyenSinh
         private void MaDVDK()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from ChiTietDVDK");
+            dta = kn.Lay_Dulieu("Select * from ChiTietDVDK");
             cbbmdv.DataSource = dta;
             cbbmdv.DisplayMember = "madv_DKDT";
           

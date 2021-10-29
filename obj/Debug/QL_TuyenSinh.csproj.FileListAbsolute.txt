@@ -20,3 +20,15 @@ D:\NEU\Lập trình .Net\BTL\BTL_KNPM\obj\Debug\QL_TuyenSinh.csproj.GenerateReso
 D:\NEU\Lập trình .Net\BTL\BTL_KNPM\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInputs.cache
 D:\NEU\Lập trình .Net\BTL\BTL_KNPM\obj\Debug\QL_TuyenSinh.exe
 D:\NEU\Lập trình .Net\BTL\BTL_KNPM\obj\Debug\QL_TuyenSinh.pdb
+D:\NEU\Lập trình .Net\BTL_QLTS\bin\Debug\QL_TuyenSinh.exe.config
+D:\NEU\Lập trình .Net\BTL_QLTS\bin\Debug\QL_TuyenSinh.exe
+D:\NEU\Lập trình .Net\BTL_QLTS\bin\Debug\QL_TuyenSinh.pdb
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReference.cache
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_HoSoTuyenSinh.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_KetQua.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Properties.Resources.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_Truong.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.GenerateResource.cache
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInputs.cache
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.exe
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.pdb

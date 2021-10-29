@@ -44,5 +44,12 @@ namespace QL_TuyenSinh
             cmd.ExecuteNonQuery();
             HuyKetNoi();
         }
+        public void ThucThi(String sql)
+        {
+            KetNoi_Dulieu();
+            cmd = new SqlCommand(sql, cnn);
+            cmd.ExecuteNonQuery();
+            HuyKetNoi();
+        }
     }
 }
