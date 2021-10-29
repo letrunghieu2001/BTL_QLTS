@@ -35,14 +35,14 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_new = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.txtb_name = new System.Windows.Forms.TextBox();
-            this.txtb_sbd = new System.Windows.Forms.TextBox();
-            this.txtb_name_truong = new System.Windows.Forms.TextBox();
-            this.txtb_id_truong = new System.Windows.Forms.TextBox();
-            this.txtb_id_hs = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.cbbmv = new System.Windows.Forms.ComboBox();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
+            this.txtdtut = new System.Windows.Forms.TextBox();
+            this.txtht = new System.Windows.Forms.TextBox();
+            this.txtsbd = new System.Windows.Forms.TextBox();
+            this.txttt = new System.Windows.Forms.TextBox();
+            this.txtmt = new System.Windows.Forms.TextBox();
+            this.txtshs = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,13 +52,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker_dob = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DataGrid_HSTS = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbbmdv = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_HSTS)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -90,6 +90,7 @@
             this.btn_save.TabIndex = 3;
             this.btn_save.Text = "Lưu";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_update
             // 
@@ -122,16 +123,16 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.dateTimePicker_dob);
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.txtb_name);
-            this.panel2.Controls.Add(this.txtb_sbd);
-            this.panel2.Controls.Add(this.txtb_name_truong);
-            this.panel2.Controls.Add(this.txtb_id_truong);
-            this.panel2.Controls.Add(this.txtb_id_hs);
+            this.panel2.Controls.Add(this.cbbmdv);
             this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.cbbmv);
+            this.panel2.Controls.Add(this.datetime);
+            this.panel2.Controls.Add(this.txtdtut);
+            this.panel2.Controls.Add(this.txtht);
+            this.panel2.Controls.Add(this.txtsbd);
+            this.panel2.Controls.Add(this.txttt);
+            this.panel2.Controls.Add(this.txtmt);
+            this.panel2.Controls.Add(this.txtshs);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
@@ -145,63 +146,64 @@
             this.panel2.Size = new System.Drawing.Size(789, 130);
             this.panel2.TabIndex = 4;
             // 
-            // textBox8
+            // cbbmv
             // 
-            this.textBox8.Location = new System.Drawing.Point(588, 79);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(155, 20);
-            this.textBox8.TabIndex = 17;
+            this.cbbmv.FormattingEnabled = true;
+            this.cbbmv.Location = new System.Drawing.Point(100, 39);
+            this.cbbmv.Name = "cbbmv";
+            this.cbbmv.Size = new System.Drawing.Size(75, 21);
+            this.cbbmv.TabIndex = 19;
             // 
-            // textBox7
+            // datetime
             // 
-            this.textBox7.Location = new System.Drawing.Point(100, 79);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(75, 20);
-            this.textBox7.TabIndex = 16;
+            this.datetime.CustomFormat = "yyyy-MM-dd";
+            this.datetime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetime.Location = new System.Drawing.Point(287, 79);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(178, 20);
+            this.datetime.TabIndex = 18;
             // 
-            // txtb_name
+            // txtdtut
             // 
-            this.txtb_name.Location = new System.Drawing.Point(287, 40);
-            this.txtb_name.Name = "txtb_name";
-            this.txtb_name.Size = new System.Drawing.Size(178, 20);
-            this.txtb_name.TabIndex = 13;
+            this.txtdtut.Location = new System.Drawing.Point(100, 79);
+            this.txtdtut.Name = "txtdtut";
+            this.txtdtut.Size = new System.Drawing.Size(75, 20);
+            this.txtdtut.TabIndex = 16;
             // 
-            // txtb_sbd
+            // txtht
             // 
-            this.txtb_sbd.Location = new System.Drawing.Point(287, 8);
-            this.txtb_sbd.Name = "txtb_sbd";
-            this.txtb_sbd.Size = new System.Drawing.Size(178, 20);
-            this.txtb_sbd.TabIndex = 12;
+            this.txtht.Location = new System.Drawing.Point(287, 40);
+            this.txtht.Name = "txtht";
+            this.txtht.Size = new System.Drawing.Size(178, 20);
+            this.txtht.TabIndex = 13;
             // 
-            // txtb_name_truong
+            // txtsbd
             // 
-            this.txtb_name_truong.Location = new System.Drawing.Point(585, 40);
-            this.txtb_name_truong.Name = "txtb_name_truong";
-            this.txtb_name_truong.Size = new System.Drawing.Size(158, 20);
-            this.txtb_name_truong.TabIndex = 11;
+            this.txtsbd.Location = new System.Drawing.Point(287, 8);
+            this.txtsbd.Name = "txtsbd";
+            this.txtsbd.Size = new System.Drawing.Size(178, 20);
+            this.txtsbd.TabIndex = 12;
             // 
-            // txtb_id_truong
+            // txttt
             // 
-            this.txtb_id_truong.Location = new System.Drawing.Point(585, 8);
-            this.txtb_id_truong.Name = "txtb_id_truong";
-            this.txtb_id_truong.Size = new System.Drawing.Size(158, 20);
-            this.txtb_id_truong.TabIndex = 10;
+            this.txttt.Location = new System.Drawing.Point(585, 44);
+            this.txttt.Name = "txttt";
+            this.txttt.Size = new System.Drawing.Size(158, 20);
+            this.txttt.TabIndex = 11;
             // 
-            // txtb_id_hs
+            // txtmt
             // 
-            this.txtb_id_hs.Location = new System.Drawing.Point(100, 8);
-            this.txtb_id_hs.Name = "txtb_id_hs";
-            this.txtb_id_hs.Size = new System.Drawing.Size(75, 20);
-            this.txtb_id_hs.TabIndex = 9;
+            this.txtmt.Location = new System.Drawing.Point(585, 8);
+            this.txtmt.Name = "txtmt";
+            this.txtmt.Size = new System.Drawing.Size(158, 20);
+            this.txtmt.TabIndex = 10;
             // 
-            // label9
+            // txtshs
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(524, 86);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Mã trường:";
+            this.txtshs.Location = new System.Drawing.Point(100, 8);
+            this.txtshs.Name = "txtshs";
+            this.txtshs.Size = new System.Drawing.Size(75, 20);
+            this.txtshs.TabIndex = 9;
             // 
             // label8
             // 
@@ -251,11 +253,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(517, 47);
+            this.label3.Location = new System.Drawing.Point(517, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tên trường:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -277,34 +280,36 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.DataGrid_HSTS);
             this.panel1.Location = new System.Drawing.Point(6, 179);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(789, 259);
             this.panel1.TabIndex = 3;
             // 
-            // dateTimePicker_dob
+            // DataGrid_HSTS
             // 
-            this.dateTimePicker_dob.Location = new System.Drawing.Point(287, 79);
-            this.dateTimePicker_dob.Name = "dateTimePicker_dob";
-            this.dateTimePicker_dob.Size = new System.Drawing.Size(178, 20);
-            this.dateTimePicker_dob.TabIndex = 18;
+            this.DataGrid_HSTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid_HSTS.Location = new System.Drawing.Point(3, 3);
+            this.DataGrid_HSTS.Name = "DataGrid_HSTS";
+            this.DataGrid_HSTS.Size = new System.Drawing.Size(783, 253);
+            this.DataGrid_HSTS.TabIndex = 0;
             // 
-            // comboBox1
+            // label9
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 39);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 21);
-            this.comboBox1.TabIndex = 19;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(486, 86);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(96, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Mã đơn vị đăng kí";
             // 
-            // dataGridView1
+            // cbbmdv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(783, 253);
-            this.dataGridView1.TabIndex = 0;
+            this.cbbmdv.FormattingEnabled = true;
+            this.cbbmdv.Location = new System.Drawing.Point(585, 78);
+            this.cbbmdv.Name = "cbbmdv";
+            this.cbbmdv.Size = new System.Drawing.Size(158, 21);
+            this.cbbmdv.TabIndex = 24;
             // 
             // Frm_HoSoTuyenSinh
             // 
@@ -321,7 +326,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_HSTS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,14 +341,12 @@
         private System.Windows.Forms.Button btn_new;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox txtb_name;
-        private System.Windows.Forms.TextBox txtb_sbd;
-        private System.Windows.Forms.TextBox txtb_name_truong;
-        private System.Windows.Forms.TextBox txtb_id_truong;
-        private System.Windows.Forms.TextBox txtb_id_hs;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtdtut;
+        private System.Windows.Forms.TextBox txtht;
+        private System.Windows.Forms.TextBox txtsbd;
+        private System.Windows.Forms.TextBox txttt;
+        private System.Windows.Forms.TextBox txtmt;
+        private System.Windows.Forms.TextBox txtshs;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -352,8 +355,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_dob;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbbmv;
+        private System.Windows.Forms.DateTimePicker datetime;
+        private System.Windows.Forms.DataGridView DataGrid_HSTS;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbbmdv;
     }
 }
