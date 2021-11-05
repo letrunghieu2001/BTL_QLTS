@@ -48,7 +48,7 @@
             // 
             this.lbl_info.AutoSize = true;
             this.lbl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_info.Location = new System.Drawing.Point(126, 27);
+            this.lbl_info.Location = new System.Drawing.Point(184, 26);
             this.lbl_info.Name = "lbl_info";
             this.lbl_info.Size = new System.Drawing.Size(218, 25);
             this.lbl_info.TabIndex = 0;
@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 87);
+            this.label1.Location = new System.Drawing.Point(85, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 3;
@@ -65,7 +65,7 @@
             // 
             // txtsbd
             // 
-            this.txtsbd.Location = new System.Drawing.Point(144, 84);
+            this.txtsbd.Location = new System.Drawing.Point(189, 82);
             this.txtsbd.Name = "txtsbd";
             this.txtsbd.Size = new System.Drawing.Size(171, 20);
             this.txtsbd.TabIndex = 4;
@@ -73,7 +73,7 @@
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(321, 82);
+            this.btn_search.Location = new System.Drawing.Point(366, 80);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(75, 23);
             this.btn_search.TabIndex = 5;
@@ -85,7 +85,7 @@
             // 
             this.btn_exit.BackColor = System.Drawing.Color.Red;
             this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.Location = new System.Drawing.Point(214, 184);
+            this.btn_exit.Location = new System.Drawing.Point(240, 207);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(83, 39);
             this.btn_exit.TabIndex = 6;
@@ -96,9 +96,9 @@
             // DataGrid_KQ
             // 
             this.DataGrid_KQ.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid_KQ.Location = new System.Drawing.Point(33, 113);
+            this.DataGrid_KQ.Location = new System.Drawing.Point(12, 111);
             this.DataGrid_KQ.Name = "DataGrid_KQ";
-            this.DataGrid_KQ.Size = new System.Drawing.Size(444, 65);
+            this.DataGrid_KQ.Size = new System.Drawing.Size(540, 90);
             this.DataGrid_KQ.TabIndex = 7;
             // 
             // qUANLYTUYENSINHDataSet
@@ -115,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 235);
+            this.ClientSize = new System.Drawing.Size(578, 258);
             this.Controls.Add(this.DataGrid_KQ);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_search);

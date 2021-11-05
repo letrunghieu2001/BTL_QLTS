@@ -43,5 +43,6 @@ C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInput
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.exe
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.pdb
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_DangNhap.resources
-C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReference.cache
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.MDI.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_NhapDiem.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReference.cache

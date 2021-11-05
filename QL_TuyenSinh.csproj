@@ -65,6 +65,12 @@
     <Compile Include="Frm_KetQua.Designer.cs">
       <DependentUpon>Frm_KetQua.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_NhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_NhapDiem.Designer.cs">
+      <DependentUpon>Frm_NhapDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_KetQua.resx">
       <DependentUpon>Frm_KetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NhapDiem.resx">
+      <DependentUpon>Frm_NhapDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>

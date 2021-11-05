@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QL_TuyenSinh
 {
@@ -93,6 +94,15 @@ namespace QL_TuyenSinh
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            string ktra = "Select sbd from HoSoTuyenSinh where sbd = '" + txtsbd.Text + "'";
+            SqlCommand cmd = new SqlCommand(ktra, kn.cnn);
+            SqlDataReader read = cmd.ExecuteReader();
+            if (read.Read() == false)
+            {
+                MessageBox.Show("Thông tin sinh viên đã tồn tại", "Thông Báo");
+                read.Close();
+                read.Dispose();
+            }
             string sql_luu;
             sql_luu = "insert into HoSoTuyenSinh values (N'" + txtsbd.Text + "',N'" + txtht.Text + "','" + datetime.Text + "',N'" + cbogt.Text + "',N'"+txtdiachi.Text+"','"+txtsdt.Text+"','"+txtcmnd.Text+"','"+cbomk.Text+"','"+cbomn.Text+"',N'"+cbonh.Text+"')";
             kn.ThucThi(sql_luu);
@@ -154,5 +164,6 @@ namespace QL_TuyenSinh
             kn.ThucThi(sql_xoa);
             HoSoTuyenSinh();
         }
+        
     }
 }

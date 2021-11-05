@@ -159,11 +159,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(151, 17);
+            this.label9.Location = new System.Drawing.Point(246, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(527, 31);
+            this.label9.Size = new System.Drawing.Size(362, 31);
             this.label9.TabIndex = 34;
-            this.label9.Text = "Nhập Thông Tin Sinh Viên Trúng Tuyển";
+            this.label9.Text = "Nhập Thông Tin Sinh Viên ";
             // 
             // cbogt
             // 

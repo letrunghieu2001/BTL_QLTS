@@ -30,5 +30,12 @@ namespace QL_TuyenSinh
             TK.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form ND = new Frm_NhapDiem();
+            ND.Show();
+            this.Hide();
+        }
     }
 }
