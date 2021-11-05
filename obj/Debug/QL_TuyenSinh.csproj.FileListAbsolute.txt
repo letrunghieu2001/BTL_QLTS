@@ -27,7 +27,6 @@ D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReferenc
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_HoSoTuyenSinh.resources
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_KetQua.resources
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Properties.Resources.resources
-D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_Truong.resources
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.GenerateResource.cache
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInputs.cache
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.exe
@@ -46,3 +45,6 @@ C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_DangNhap.resources
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.MDI.resources
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_NhapDiem.resources
 C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReference.cache
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_DangNhap.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_NhapDiem.resources
+D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.MDI.resources

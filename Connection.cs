@@ -17,7 +17,7 @@ namespace QL_TuyenSinh
 
         public void KetNoi_Dulieu()
         {
-            string strKetnoi = @"Data Source=DESKTOP-IM78S2K;Initial Catalog=QUANLYTUYENSINH;Integrated Security=True;MultipleActiveResultSets=true;";
+            string strKetnoi = @"Data Source=.\SQLEXPRESS;Initial Catalog=QUANLYTUYENSINH;Integrated Security=True;MultipleActiveResultSets=true;";
             cnn = new SqlConnection(strKetnoi);
             cnn.Open();
         }
