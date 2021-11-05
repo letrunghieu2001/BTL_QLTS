@@ -17,7 +17,7 @@ namespace QL_TuyenSinh
         {
             InitializeComponent();
         }
-        KetNoi kn = new KetNoi();
+        Connection kn = new Connection();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -25,9 +25,9 @@ namespace QL_TuyenSinh
 
             string DN = txtdn.Text;
             string MK = txtmk.Text;
-            string sql_login = "select user_id, password from LOGIN where user_id = '" + DN + "' and password = '" + MK + "'";
+            string sql_login = "select TDN, MK from DangNhap where TDN = '" + DN + "' and MK = '" + MK + "'";
             //Ten dang nhap: admin 
-            //Mat khau: 1
+            //Mat khau: admin
 
             SqlCommand cmd = new SqlCommand(sql_login, kn.cnn);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -43,6 +43,11 @@ namespace QL_TuyenSinh
                 MessageBox.Show("Hãy kiểm tra lại thông tin đăng nhập!");
                 txtdn.Focus();
             }
+        }
+
+        private void txtmk_TextChanged(object sender, EventArgs e)
+        {
+            txtmk.PasswordChar = '*';
         }
     }
  }

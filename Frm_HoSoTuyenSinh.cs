@@ -19,7 +19,9 @@ namespace QL_TuyenSinh
         Connection kn = new Connection();
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form MDI = new MDI();
+            MDI.Show();
+            this.Hide();
         }
         private void HoSoTuyenSinh()
         {
@@ -27,64 +29,72 @@ namespace QL_TuyenSinh
             dta = kn.Lay_Dulieu("Select * from HoSoTuyenSinh");
             DataGrid_HSTS.DataSource = dta;
             HIENTHIDULIEU();
+       
         }
-        private void MaVung()
+        private void GioiTinh()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_Dulieu("Select * from DoiTuongUuTien");
+            dta = kn.Lay_Dulieu("Select * from GioiTinh");
+            cbogt.DataSource = dta;
+            cbogt.DisplayMember = "gioitinh";
+        }
+        
+        private void NganhHoc()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_Dulieu("Select * from NganhHoc");
             DataGrid_HSTS.DataSource = dta;
-            cbbmv.DataSource = dta;
-            cbbmv.DisplayMember = "mavung";
-           
+            cbomn.DataSource = dta;
+            cbomn.DisplayMember = "manganh";
+            cbonh.DataSource = dta;
+            cbonh.DisplayMember = "tennganh";
+            cbomk.DataSource = dta;
+            cbomk.DisplayMember = "makhoi";
         }
-        private void MaDVDK()
-        {
-            DataTable dta = new DataTable();
-            dta = kn.Lay_Dulieu("Select * from ChiTietDVDK");
-            cbbmdv.DataSource = dta;
-            cbbmdv.DisplayMember = "madv_DKDT";
-          
-        }
+
 
         private void HIENTHIDULIEU()
         {
-            txtshs.DataBindings.Clear();
-            txtshs.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "sohoso");
-            txtdtut.DataBindings.Clear();
-            txtdtut.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "doituonguutien");
             txtsbd.DataBindings.Clear();
             txtsbd.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "sbd");
             txtht.DataBindings.Clear();
-            txtht.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "tenthisinh");
+            txtht.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "hoten");
             datetime.DataBindings.Clear();
             datetime.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "ngaysinh");
-            txtmt.DataBindings.Clear();
-            txtmt.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "matruong");
-            txttt.DataBindings.Clear();
-            txttt.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "tentruong");
-            cbbmv.DataBindings.Clear();
-            cbbmv.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "mavung");
-            cbbmdv.DataBindings.Clear();
-            cbbmdv.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "madv_DKDT");
+            cbogt.DataBindings.Clear();
+            cbogt.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "gioitinh");
+            txtdiachi.DataBindings.Clear();
+            txtdiachi.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "diachi");
+            txtsdt.DataBindings.Clear();
+            txtsdt.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "dienthoai");
+            txtcmnd.DataBindings.Clear();
+            txtcmnd.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "socmt");
+            cbomk.DataBindings.Clear();
+            cbomk.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "makhoi");
+            cbomn.DataBindings.Clear();
+            cbomn.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "manganh");
+            cbonh.DataBindings.Clear();
+            cbonh.DataBindings.Add("Text", DataGrid_HSTS.DataSource, "tennganh");
+
 
 
         }
         private void Frm_HoSoTuyenSinh_Load(object sender, EventArgs e)
         {
-            MaDVDK();
-            MaVung();
+            GioiTinh();
+            NganhHoc();
             HoSoTuyenSinh();
         }
 
         private void btn_new_Click(object sender, EventArgs e)
         {
-            txtshs.Text = txtht.Text = txtsbd.Text= txtmt.Text = txttt.Text = cbbmv.Text = cbbmdv.Text = "";
+            txtsbd.Text = txtht.Text = datetime.Text = cbogt.Text = txtdiachi.Text = txtsdt.Text = txtcmnd.Text = cbomk.Text = cbomn.Text = cbonh.Text = "";
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
             string sql_luu;
-            sql_luu = "insert into HoSoTuyenSinh values ('" + txtshs.Text + "','" + txtmt.Text + "','" + txttt.Text + "','" + txtsbd.Text + "','" + txtht.Text + "','"+datetime.Text+"','"+cbbmv.Text+"','"+txtdtut.Text+"','"+cbbmdv.Text+"')";
+            sql_luu = "insert into HoSoTuyenSinh values (N'" + txtsbd.Text + "',N'" + txtht.Text + "','" + datetime.Text + "',N'" + cbogt.Text + "',N'"+txtdiachi.Text+"','"+txtsdt.Text+"','"+txtcmnd.Text+"','"+cbomk.Text+"','"+cbomn.Text+"',N'"+cbonh.Text+"')";
             kn.ThucThi(sql_luu);
             HoSoTuyenSinh();
         }
@@ -92,6 +102,57 @@ namespace QL_TuyenSinh
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbbmv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbodc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtht_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            string sql_update;
+            sql_update = "Update HoSoTuyenSinh set hoten = N'" + txtht.Text + "',ngaysinh = '" + datetime.Text + "', gioitinh = N'" + cbogt.Text + "', diachi = N'" + txtdiachi.Text + "', dienthoai = '" + txtsdt.Text + "', socmt = '" + txtcmnd.Text + "', makhoi = '" + cbomk.Text + "', manganh = '" + cbomn.Text + "', tennganh = N'" + cbonh.Text + "' where sbd = '" + txtsbd.Text + "'";
+            kn.ThucThi(sql_update);
+            HoSoTuyenSinh();
+        }
+
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            string sql_xoa;
+            sql_xoa = "Delete HoSoTuyenSinh where sbd ='" + txtsbd.Text + "'";
+            kn.ThucThi(sql_xoa);
+            HoSoTuyenSinh();
         }
     }
 }

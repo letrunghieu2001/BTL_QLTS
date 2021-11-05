@@ -32,3 +32,16 @@ D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.GenerateResource
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInputs.cache
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.exe
 D:\NEU\Lập trình .Net\BTL_QLTS\obj\Debug\QL_TuyenSinh.pdb
+C:\Users\PC\source\repos\BTL_QLTS\bin\Debug\QL_TuyenSinh.exe.config
+C:\Users\PC\source\repos\BTL_QLTS\bin\Debug\QL_TuyenSinh.exe
+C:\Users\PC\source\repos\BTL_QLTS\bin\Debug\QL_TuyenSinh.pdb
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_HoSoTuyenSinh.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_KetQua.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Properties.Resources.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.exe
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.pdb
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.Frm_DangNhap.resources
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\BTL_QLTS\obj\Debug\QL_TuyenSinh.MDI.resources

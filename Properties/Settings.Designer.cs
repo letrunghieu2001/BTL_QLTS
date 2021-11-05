@@ -33,5 +33,16 @@ namespace QL_TuyenSinh.Properties {
                 return ((string)(this["BTL_QLtuyensinhConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-IM78S2K;Initial Catalog=QUANLYTUYENSINH;Integrated Security=T" +
+            "rue")]
+        public string QUANLYTUYENSINHConnectionString {
+            get {
+                return ((string)(this["QUANLYTUYENSINHConnectionString"]));
+            }
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace QL_TuyenSinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_HoSoTuyenSinh());
+            Application.Run(new Frm_DangNhap());
         }
     }
 }

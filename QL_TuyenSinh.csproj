@@ -46,12 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BTL_QLtuyensinhDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BTL_QLtuyensinhDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="Frm_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DangNhap.Designer.cs">
+      <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_HoSoTuyenSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,19 +65,30 @@
     <Compile Include="Frm_KetQua.Designer.cs">
       <DependentUpon>Frm_KetQua.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Frm_Truong.cs">
+    <Compile Include="MDI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Truong.Designer.cs">
-      <DependentUpon>Frm_Truong.cs</DependentUpon>
+    <Compile Include="MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUANLYTUYENSINHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYTUYENSINHDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_DangNhap.resx">
+      <DependentUpon>Frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_HoSoTuyenSinh.resx">
       <DependentUpon>Frm_HoSoTuyenSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_KetQua.resx">
       <DependentUpon>Frm_KetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,20 +99,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Frm_Truong.resx">
-      <DependentUpon>Frm_Truong.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="BTL_QLtuyensinhDataSet.xsc">
-      <DependentUpon>BTL_QLtuyensinhDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BTL_QLtuyensinhDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BTL_QLtuyensinhDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BTL_QLtuyensinhDataSet.xss">
-      <DependentUpon>BTL_QLtuyensinhDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,6 +108,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QUANLYTUYENSINHDataSet.xsc">
+      <DependentUpon>QUANLYTUYENSINHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYTUYENSINHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYTUYENSINHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYTUYENSINHDataSet.xss">
+      <DependentUpon>QUANLYTUYENSINHDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

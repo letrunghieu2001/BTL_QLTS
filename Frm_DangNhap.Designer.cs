@@ -63,6 +63,7 @@ namespace QL_TuyenSinh
             this.txtmk.Name = "txtmk";
             this.txtmk.Size = new System.Drawing.Size(236, 26);
             this.txtmk.TabIndex = 2;
+            this.txtmk.TextChanged += new System.EventHandler(this.txtmk_TextChanged);
             // 
             // label2
             // 

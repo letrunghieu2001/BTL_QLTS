@@ -21,28 +21,28 @@ namespace QL_TuyenSinh
   
         private void Frm_KetQua_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bTL_QLtuyensinhDataSet.KetQua' table. You can move, or remove it, as needed.
-            this.ketQuaTableAdapter.Fill(this.bTL_QLtuyensinhDataSet.KetQua);
-            dataGridView_Ketqua.Enabled = false;
+            DataGrid_KQ.Enabled = false;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form MDI = new MDI();
+            MDI.Show();
+            this.Hide();
         }
 
         private void btn_search_Click(object sender, EventArgs e)
         {
-            string sql_search = "Select * from KetQua where sbd = '" + txtb_id.Text + "'";
             DataTable dta = new DataTable();
+            string sql_search = "Select * from DiemThi where sbd = '" + txtsbd.Text + "'";
             dta = kn.Lay_Dulieu(sql_search);
 
             SqlCommand cmd = new SqlCommand(sql_search, kn.cnn);
             SqlDataReader datRed = cmd.ExecuteReader();
             if (datRed.Read() == true)
             {
-                dataGridView_Ketqua.DataSource = dta;
-                dataGridView_Ketqua.Enabled = true;
+                DataGrid_KQ.DataSource = dta;
+                DataGrid_KQ.Enabled = true;
             }
             else
             {
