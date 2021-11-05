@@ -45,6 +45,8 @@ namespace QL_TuyenSinh
             this.qUANLYTUYENSINHDataSet = new QL_TuyenSinh.QUANLYTUYENSINHDataSet();
             this.diemChuanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.diemChuanTableAdapter = new QL_TuyenSinh.QUANLYTUYENSINHDataSetTableAdapters.DiemChuanTableAdapter();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_KQ)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qUANLYTUYENSINHDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diemChuanBindingSource)).BeginInit();
@@ -54,7 +56,7 @@ namespace QL_TuyenSinh
             // 
             this.lbl_info.AutoSize = true;
             this.lbl_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_info.Location = new System.Drawing.Point(189, 19);
+            this.lbl_info.Location = new System.Drawing.Point(298, 9);
             this.lbl_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_info.Name = "lbl_info";
             this.lbl_info.Size = new System.Drawing.Size(322, 37);
@@ -65,7 +67,7 @@ namespace QL_TuyenSinh
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 80);
+            this.label1.Location = new System.Drawing.Point(61, 80);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 20);
@@ -74,15 +76,15 @@ namespace QL_TuyenSinh
             // 
             // txtsbd
             // 
-            this.txtsbd.Location = new System.Drawing.Point(220, 77);
+            this.txtsbd.Location = new System.Drawing.Point(221, 77);
             this.txtsbd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtsbd.Name = "txtsbd";
-            this.txtsbd.Size = new System.Drawing.Size(254, 26);
+            this.txtsbd.Size = new System.Drawing.Size(430, 26);
             this.txtsbd.TabIndex = 5;
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(548, 73);
+            this.btn_search.Location = new System.Drawing.Point(757, 73);
             this.btn_search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_search.Name = "btn_search";
             this.btn_search.Size = new System.Drawing.Size(112, 35);
@@ -98,13 +100,13 @@ namespace QL_TuyenSinh
             this.DataGrid_KQ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DataGrid_KQ.Name = "DataGrid_KQ";
             this.DataGrid_KQ.RowHeadersWidth = 62;
-            this.DataGrid_KQ.Size = new System.Drawing.Size(666, 100);
+            this.DataGrid_KQ.Size = new System.Drawing.Size(856, 100);
             this.DataGrid_KQ.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(494, 259);
+            this.label2.Location = new System.Drawing.Point(720, 259);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
@@ -113,16 +115,17 @@ namespace QL_TuyenSinh
             // 
             // txtketqua
             // 
-            this.txtketqua.Location = new System.Drawing.Point(584, 253);
+            this.txtketqua.Location = new System.Drawing.Point(800, 253);
             this.txtketqua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtketqua.Name = "txtketqua";
-            this.txtketqua.Size = new System.Drawing.Size(123, 26);
+            this.txtketqua.Size = new System.Drawing.Size(97, 26);
             this.txtketqua.TabIndex = 10;
+            this.txtketqua.TextChanged += new System.EventHandler(this.txtketqua_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(216, 259);
+            this.label3.Location = new System.Drawing.Point(433, 262);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 20);
@@ -131,17 +134,17 @@ namespace QL_TuyenSinh
             // 
             // txtdiemchuan
             // 
-            this.txtdiemchuan.Location = new System.Drawing.Point(345, 256);
+            this.txtdiemchuan.Location = new System.Drawing.Point(556, 256);
             this.txtdiemchuan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtdiemchuan.Name = "txtdiemchuan";
-            this.txtdiemchuan.Size = new System.Drawing.Size(109, 26);
+            this.txtdiemchuan.Size = new System.Drawing.Size(130, 26);
             this.txtdiemchuan.TabIndex = 12;
             // 
             // btn_exit
             // 
             this.btn_exit.BackColor = System.Drawing.Color.Red;
             this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_exit.Location = new System.Drawing.Point(321, 307);
+            this.btn_exit.Location = new System.Drawing.Point(393, 328);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(124, 60);
@@ -152,7 +155,7 @@ namespace QL_TuyenSinh
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 259);
+            this.label4.Location = new System.Drawing.Point(13, 262);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 20);
@@ -161,10 +164,10 @@ namespace QL_TuyenSinh
             // 
             // txtkhoi
             // 
-            this.txtkhoi.Location = new System.Drawing.Point(65, 256);
+            this.txtkhoi.Location = new System.Drawing.Point(65, 259);
             this.txtkhoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtkhoi.Name = "txtkhoi";
-            this.txtkhoi.Size = new System.Drawing.Size(109, 26);
+            this.txtkhoi.Size = new System.Drawing.Size(118, 26);
             this.txtkhoi.TabIndex = 15;
             // 
             // qUANLYTUYENSINHDataSet
@@ -181,11 +184,32 @@ namespace QL_TuyenSinh
             // 
             this.diemChuanTableAdapter.ClearBeforeFill = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(191, 262);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 20);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Tổng điểm";
+            // 
+            // txtt
+            // 
+            this.txtt.Location = new System.Drawing.Point(286, 259);
+            this.txtt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtt.Name = "txtt";
+            this.txtt.Size = new System.Drawing.Size(124, 26);
+            this.txtt.TabIndex = 21;
+            // 
             // Frm_PhieuBaoDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 381);
+            this.ClientSize = new System.Drawing.Size(927, 409);
+            this.Controls.Add(this.txtt);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtkhoi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_exit);
@@ -226,5 +250,7 @@ namespace QL_TuyenSinh
         private QUANLYTUYENSINHDataSet qUANLYTUYENSINHDataSet;
         private System.Windows.Forms.BindingSource diemChuanBindingSource;
         private QUANLYTUYENSINHDataSetTableAdapters.DiemChuanTableAdapter diemChuanTableAdapter;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtt;
     }
 }

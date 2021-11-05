@@ -49,7 +49,16 @@ namespace QL_TuyenSinh
                 {
                     txtdiemchuan.Text = datRed1["diemchuan"].ToString();
 
-                    string sql_ketqua = "SELECT diemthi, CASE WHEN diemthi >= " + txtdiemchuan.Text + " THEN 'Do' ELSE 'Truot' END AS ketqua FROM DiemThi WHERE DiemThi.sbd = '" + txtsbd.Text + "'";
+                    string sql_tong = "select SUM(diemthi) AS tongdiem from DiemThi where sbd = '" + txtsbd.Text + "'";
+                    SqlCommand cmd3 = new SqlCommand(sql_tong, kn.cnn);
+                    SqlDataReader datRed3 = cmd3.ExecuteReader();
+                    if (datRed3.Read())
+                    {
+                        txtt.DataBindings.Clear();
+                        txtt.Text = datRed3["tongdiem"].ToString();
+                    }
+
+                    string sql_ketqua = "SELECT SUM(diemthi) AS tongdiem, CASE WHEN SUM(diemthi) >= " + txtdiemchuan.Text + " THEN 'Do' ELSE 'Truot' END AS ketqua FROM DiemThi WHERE DiemThi.sbd = '" + txtsbd.Text + "'";
                     SqlCommand cmd2 = new SqlCommand(sql_ketqua, kn.cnn);
                     SqlDataReader datRed2 = cmd2.ExecuteReader();
                     if (datRed2.Read())
@@ -77,6 +86,11 @@ namespace QL_TuyenSinh
         {
             // TODO: This line of code loads data into the 'qUANLYTUYENSINHDataSet.DiemChuan' table. You can move, or remove it, as needed.
             
+
+        }
+
+        private void txtketqua_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

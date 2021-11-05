@@ -16,7 +16,7 @@ namespace QL_TuyenSinh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_NhapDiem());
+            Application.Run(new Frm_PhieuBaoDiem());
         }
     }
 }

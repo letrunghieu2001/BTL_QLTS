@@ -45,14 +45,7 @@ namespace QL_TuyenSinh
             txtdt.DataBindings.Clear();
             txtdt.DataBindings.Add("Text", DataGrid_NhapDiem.DataSource, "diemthi");
 
-            string sql_tong = "select SUM(diemthi) AS tongdiem from DiemThi where sbd = '" + txtsbd.Text + "'";
-            SqlCommand cmd1 = new SqlCommand(sql_tong, kn.cnn);
-            SqlDataReader datRed1 = cmd1.ExecuteReader();
-            if (datRed1.Read())
-            {
-                txtt.Text = datRed1["tongdiem"].ToString();
-            }
-
+            
         }
 
         private void Frm_NhapDiem_Load(object sender, EventArgs e)
@@ -115,6 +108,26 @@ namespace QL_TuyenSinh
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void DataGrid_NhapDiem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string sql_sbd = "select sbd from DiemThi where sbd = '" + txtsbd.Text + "'";
+            SqlCommand cmd = new SqlCommand(sql_sbd, kn.cnn);
+            SqlDataReader datRed = cmd.ExecuteReader();
+            if (datRed.Read())
+            {
+                txtsbd.Text = datRed["sbd"].ToString();
+
+                string sql_tong = "select SUM(diemthi) AS tongdiem from DiemThi where sbd = '" + txtsbd.Text + "'";
+                SqlCommand cmd1 = new SqlCommand(sql_tong, kn.cnn);
+                SqlDataReader datRed1 = cmd1.ExecuteReader();
+                if (datRed1.Read())
+                {
+                    txtt.DataBindings.Clear();
+                    txtt.Text = datRed1["tongdiem"].ToString();
+                }
+            }
         }
     }
     
