@@ -154,5 +154,10 @@ namespace QL_TuyenSinh
             kn.ThucThi(sql_xoa);
             HoSoTuyenSinh();
         }
+
+        private void cbomn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
