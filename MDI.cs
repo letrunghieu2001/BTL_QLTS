@@ -26,8 +26,8 @@ namespace QL_TuyenSinh
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form TK = new Frm_KetQua();
-            TK.Show();
+            Form PBD = new Frm_PhieuBaoDiem();
+            PBD.Show();
             this.Hide();
         }
 

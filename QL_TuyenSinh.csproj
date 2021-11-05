@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,23 +66,47 @@
     <Compile Include="Frm_HoSoTuyenSinh.Designer.cs">
       <DependentUpon>Frm_HoSoTuyenSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_KetQua.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_KetQua.Designer.cs">
-      <DependentUpon>Frm_KetQua.cs</DependentUpon>
-    </Compile>
     <Compile Include="Frm_NhapDiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_NhapDiem.Designer.cs">
       <DependentUpon>Frm_NhapDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_PhieuBaoDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PhieuBaoDiem.Designer.cs">
+      <DependentUpon>Frm_PhieuBaoDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PBD.Designer.cs">
+      <DependentUpon>PBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCN.Designer.cs">
+      <DependentUpon>PCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuBaoDiem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuBaoDiem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PhieuCaNhan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuCaNhan.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,14 +121,28 @@
     <EmbeddedResource Include="Frm_HoSoTuyenSinh.resx">
       <DependentUpon>Frm_HoSoTuyenSinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_KetQua.resx">
-      <DependentUpon>Frm_KetQua.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Frm_NhapDiem.resx">
       <DependentUpon>Frm_NhapDiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PhieuBaoDiem.resx">
+      <DependentUpon>Frm_PhieuBaoDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PBD.resx">
+      <DependentUpon>PBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCN.resx">
+      <DependentUpon>PCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuBaoDiem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuBaoDiem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuCaNhan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuCaNhan.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
